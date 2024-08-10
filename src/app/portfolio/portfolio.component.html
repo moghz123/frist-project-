@@ -1,0 +1,83 @@
+<section  class="bg-emerald-500 portofolio mt-20" (click)="closeImg($event)">
+  <div class="container p-5">
+    <div
+      class="col-md-12 text-center flex flex-column justify-center items-center"
+    >
+      <h1 class="text-3xl text-white uppercase fs-1 fw-bold">
+        portofolio
+      </h1>
+      <div class="flex text-white justify-center items-center gap-3">
+        <div class="line bg-white w-20 h-1"></div>
+        <i class="fa-solid fa-star text-2xl"></i>
+        <div class="line bg-white w-20 h-1"></div>
+      </div>
+    </div>
+    <div class="row gy-3">
+      <div class="col-md-4 cursor-pointer ">
+        <div class="img relative group" >
+          <img  class="rounded-xl" src="../../assets/poert1.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cursor-pointer ">
+        <div class="img relative group" >
+          <img  class="rounded-xl" src="../../assets/port2.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cursor-pointer ">
+        <div class="img relative group" >
+          <img  class="rounded-xl" src="../../assets/port3.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cursor-pointer ">
+        <div class="img relative group" >
+          <img  class="rounded-xl" src="../../assets/poert1.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cursor-pointer ">
+        <div class="img relative group" >
+          <img  class="rounded-xl" src="../../assets/port2.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cursor-pointer ">
+        <div  class="img relative group" >
+          <img class="rounded-xl" src="../../assets/port3.png" alt="" />
+          <div (click)="getImg()"
+            class="bg-emerald-400 thePlus ease-in-out transition-opacity group-hover:duration-700 rounded-xl absolute opacity-5 group-hover:opacity-70 w-full h-full bottom-0 right-0 left-0 top-0 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus text-6xl text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div  id="layer"
+    class="d-none bottom-0 left-0 top-0 right-0 bg-black bg-opacity-25 d-flex justify-center items-center" [class]="!isImg?'fixed block':'fixed'"
+  >
+    <img id="the-img" class="w-5/12"  [src]="getSrc()" alt="" />
+  </div>
+</section>

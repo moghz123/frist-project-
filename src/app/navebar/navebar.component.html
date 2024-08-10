@@ -1,0 +1,19 @@
+<nav
+  class="navbar navbar-expand-lg bg-gray-700 px-3 py-4 text-white  flex flex-row justify-between md:flex md:flex-row md:justify-between items-center relative"
+>
+  <div class="title">
+    <span class="text-4xl"> Start Framework </span>
+  </div>
+  <div class="tabs">
+    <ul
+     [class]="!openBar?'block px-3 pb-3 translate-y-10 transition-all ease-in-out duration-1000':'hidden'" class="text-2xl md:gap-x-10 absolute  md:static md:flex md:flex-row bg-gray-700 w-full left-0 "
+    >
+      <li class="mt-2"><a routerLink="about" routerLinkActive="bg-emerald-500 p-2 rounded-xl">About</a></li>
+      <li class="mt-2"><a routerLink="portfolio"routerLinkActive="bg-emerald-500 p-2 rounded-xl">portofolio</a></li>
+      <li class="mt-2"><a routerLink="contact"routerLinkActive="bg-emerald-500 p-2 rounded-xl">contact</a></li>
+    </ul>
+  </div>
+
+    <span (click)="toggelBar()" class="cursor-pointer md:hidden"><i class="fa-solid fa-bars text-3xl block"></i></span>
+
+</nav>
